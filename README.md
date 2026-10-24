@@ -1,5 +1,7 @@
 # flex-fetch (npm package: `flex-fetch-express`)
 
+[npm package](https://www.npmjs.com/package/flex-fetch-express) · [GitHub repository](https://github.com/yarin-mag/flex-fetch-express)
+
 Automatically cancel outgoing `fetch` requests when an Express client disconnects or when another task wins a race. The middleware stores one `AbortController` per incoming request with Node.js `AsyncLocalStorage`; `fetchWithAbort` picks up its signal from anywhere in that asynchronous request chain.
 
 ## The problem

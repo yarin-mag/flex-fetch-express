@@ -1,7 +1,22 @@
 {
   "name": "flex-fetch-express",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Propagate request cancellation to outgoing fetches and losing race tasks.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yarin-mag/flex-fetch-express.git"
+  },
+  "homepage": "https://github.com/yarin-mag/flex-fetch-express#readme",
+  "bugs": {
+    "url": "https://github.com/yarin-mag/flex-fetch-express/issues"
+  },
+  "keywords": [
+    "fetch",
+    "express",
+    "abort",
+    "cancellation",
+    "async-local-storage"
+  ],
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",
