@@ -1,0 +1,68 @@
+{
+  "name": "flex-fetch-express",
+  "version": "0.1.0",
+  "description": "Propagate request cancellation to outgoing fetches and losing race tasks.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./fetch": {
+      "import": {
+        "types": "./dist/fetch.d.ts",
+        "default": "./dist/fetch.mjs"
+      },
+      "require": {
+        "types": "./dist/fetch.d.cts",
+        "default": "./dist/fetch.cjs"
+      }
+    },
+    "./race": {
+      "import": {
+        "types": "./dist/race.d.ts",
+        "default": "./dist/race.mjs"
+      },
+      "require": {
+        "types": "./dist/race.d.cts",
+        "default": "./dist/race.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "PROJECT_BLUEPRINT.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "demo": "npm run build && node examples/server.mjs"
+  },
+  "peerDependencies": {
+    "express": ">=4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "express": "^5.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}

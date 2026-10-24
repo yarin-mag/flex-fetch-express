@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run example server",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/server.mjs",
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "npm: build"
+    }
+  ]
+}
